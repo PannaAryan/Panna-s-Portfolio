@@ -1,355 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Interactive Terminal</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="main-container" id="main-container">
-        <!-- Instruction Overlay -->
-        <div class="instruction-overlay" id="instruction-overlay">
-            <div class="instruction-content">
-                <h2>Welcome to Panna's DockYard!</h2>
-                <p>Navigate through sections using:</p>
-                <div class="instruction-options">
-                    <div class="instruction-option">
-                        <div class="option-icon">💻</div>
-                        <div class="option-text">
-                            <strong>Terminal</strong>
-                            <p>Click "Terminal" icon and get started.</p>
-                            <p>You KNOW the commands, right?</p>
-                        </div>
-                    </div>
-                    <div class="instruction-option">
-                        <div class="option-icon">📱</div>
-                        <div class="option-text">
-                            <strong>MenuBar</strong>
-                            <p>Menu can't be left.</p>
-                            <p>So did put 'em on the LEFT.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="close-instructions-btn" id="close-instructions">Got it!</button>
+      <!-- Instruction Overlay -->
+      <div class="instruction-overlay" id="instruction-overlay">
+        <div class="instruction-content">
+          <h2>Welcome to Panna's DockYard!</h2>
+          <p>Navigate through sections using:</p>
+          <div class="instruction-options">
+            <div class="instruction-option">
+              <div class="option-icon">💻</div>
+              <div class="option-text">
+                <strong>Terminal</strong>
+                <p>Click "Terminal" icon and get started.</p>
+                <p>You KNOW the commands, right?</p>
+              </div>
             </div>
+            <div class="instruction-option">
+              <div class="option-icon">📱</div>
+              <div class="option-text">
+                <strong>MenuBar</strong>
+                <p>Menu can't be left.</p>
+                <p>So did put 'em on the LEFT.</p>
+              </div>
+            </div>
+          </div>
+          <button class="close-instructions-btn" id="close-instructions">
+            Got it!
+          </button>
         </div>
+      </div>
 
-        <!-- Navigation Menu -->
-        <nav class="nav-menu" id="nav-menu">
-            <ul class="nav-items">
-                <li><a href="#home" class="nav-item active" data-section="home">Home</a></li>
-                <li><a href="#education" class="nav-item" data-section="education">Education</a></li>
-                <li><a href="#skills" class="nav-item" data-section="skills">Skills</a></li>
-                <li><a href="#experience" class="nav-item" data-section="experience">Experience</a></li>
-                <li><a href="#projects" class="nav-item" data-section="projects">Projects</a></li>
-                <li><a href="#research" class="nav-item" data-section="research">Research</a></li>
-                <li><a href="#contact" class="nav-item" data-section="contact">Contact</a></li>
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-items">
+          <li>
+            <a href="#home" class="nav-item active" data-section="home">Home</a>
+          </li>
+          <li>
+            <a href="#education" class="nav-item" data-section="education"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-item" data-section="skills">Skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-item" data-section="experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav-item" data-section="projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#research" class="nav-item" data-section="research"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-item" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Terminal Toggle Button -->
+      <button class="terminal-toggle" id="terminal-toggle">
+        <span class="terminal-icon">></span> Terminal
+      </button>
+
+      <!-- Sections -->
+      <section id="home" class="section hero-section active">
+        <div class="hero-content">
+          <div class="profile-card">
+            <div class="profile-picture">
+              <img src="assets/images/profile.jpeg" alt="Panna Das" />
+            </div>
+            <div class="profile-info">
+              <h1>Panna Das</h1>
+              <p class="designation">Software Engineer</p>
+              <p class="intro-text">
+                Passionate engineer crafting digital experiences with modern
+                technologies. Turning ideas into reality through clean code and
+                innovative solutions.
+              </p>
+              <div class="stats">
+                <div class="stat-item">
+                  <span class="stat-number">1</span>
+                  <span class="stat-label">Year Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">Core Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section education-section">
+        <h2>Education</h2>
+        <p class="section-subtitle">ACADEMIC JOURNEY</p>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>B.Sc.(Engg.) in Software Engineering</h3>
+              <p class="institution">
+                Shahjalal University of Science and Technology
+              </p>
+              <p class="year">2020 - 2025</p>
+              <p class="description">
+                Got into my nerve, yet got out with 3.80/4.00 CGPA 👻
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <h2>Skills</h2>
+        <p class="section-subtitle">TECHNICAL EXPERTISE</p>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Languages</h3>
+            <div class="skill-items">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Javascript</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Frameworks & Libraries</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">DRF</span>
+              <span class="skill-tag">FastAPI</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Tools & Technologies</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Git/GitLab CI/CD</span>
+              <span class="skill-tag">Linux/Docker</span>
+              <span class="skill-tag">Celery/RabbitMQ/Redis</span>
+              <span class="skill-tag">Postman/Jira</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Problem Solving Sites</h3>
+            <div class="skill-items">
+              <a
+                href="https://leetcode.com/u/PannaAryan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="skill-tag skill-link"
+              >
+                LeetCode
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                href="https://codeforces.com/profile/panna1957"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="skill-tag skill-link"
+              >
+                CodeForces
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                href="https://www.hackerrank.com/profile/Noob_57"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="skill-tag skill-link"
+              >
+                HackerRank
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                href="https://www.stopstalk.com/user/profile/HeWhoFades"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="skill-tag skill-link"
+              >
+                StopStalk
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section experience-section">
+        <h2>Experience</h2>
+        <p class="section-subtitle">PROFESSIONAL JOURNEY</p>
+        <div class="experience-container">
+          <div class="experience-card">
+            <h3>Software Engineer</h3>
+            <p class="company">TallyKhata</p>
+            <p class="duration">November 2024 - Present</p>
+            <ul>
+              <li>
+                Core backend engineer for TallyKhata (10M+ downloads, 300K
+                DAUs), focused on MSMEs in Bangladesh.
+              </li>
+              <li>
+                Built a custom URL shortener with FastAPI, replacing Firebase
+                and reducing external dependencies.
+              </li>
+              <li>
+                Optimized PostgreSQL queries, reducing server load by 15% during
+                peak hours.
+              </li>
+              <li>
+                Improved GitLab CI/CD pipelines, cutting build times by 20%
+                across environments.
+              </li>
+              <li>
+                During internship, developed APIs, wrote unit tests, and
+                improved backend–frontend integration, saving 25% dev time.
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </section>
 
-        <!-- Terminal Toggle Button -->
-        <button class="terminal-toggle" id="terminal-toggle">
-            <span class="terminal-icon">></span> Terminal
-        </button>
-
-        <!-- Sections -->
-        <section id="home" class="section hero-section active">
-            <div class="hero-content">
-                <div class="profile-card">
-                    <div class="profile-picture">
-                        <img src="assets/images/profile.jpeg" alt="Panna Das">
-                    </div>
-                    <div class="profile-info">
-                        <h1>Panna Das</h1>
-                        <p class="designation">Software Engineer</p>
-                        <p class="intro-text">
-                            Passionate engineer crafting digital experiences with modern technologies. Turning ideas into reality through clean code and innovative solutions.
-                        </p>
-                        <div class="stats">
-                            <div class="stat-item">
-                                <span class="stat-number">1</span>
-                                <span class="stat-label">Year Experience</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">10+</span>
-                                <span class="stat-label">Projects</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">5+</span>
-                                <span class="stat-label">Core Technologies</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
+        <p class="section-subtitle">FEATURED WORK</p>
+        <div class="projects-carousel-container">
+          <div class="projects-carousel">
+            <div class="project-card">
+              <h3>Cast Your Vote</h3>
+              <p class="project-description">
+                a web-based voting platform allowing users to participate in
+                polls with real-time results and secure user access
+              </p>
+              <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">BootStrap</span>
+                <span class="tag">HTML</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">Live Demo</a>
+                <a
+                  href="https://github.com/PannaAryan/Cast-Your-Vote"
+                  class="btn-link"
+                  >GitHub</a
+                >
+              </div>
             </div>
-        </section>
-
-        <section id="education" class="section education-section">
-            <h2>Education</h2>
-            <p class="section-subtitle">ACADEMIC JOURNEY</p>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>B.Sc.(Engg.) in Software Engineering</h3>
-                        <p class="institution">Shahjalal University of Science and Technology</p>
-                        <p class="year">2020 - 2025</p>
-                        <p class="description">Got into my nerve, yet got out with 3.80/4.00 CGPA 👻</p>
-                    </div>
-                </div>
+            <div class="project-card">
+              <h3>DentaFlow</h3>
+              <p class="project-description">
+                Fullstack dental workflow application for managing appointments,
+                doctor schedules, and patient records with secure access.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Express</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">Live Demo</a>
+                <a
+                  href="https://github.com/PannaAryan/DentaFlow"
+                  class="btn-link"
+                  >GitHub</a
+                >
+              </div>
             </div>
-        </section>
-
-        <section id="skills" class="section skills-section">
-            <h2>Skills</h2>
-            <p class="section-subtitle">TECHNICAL EXPERTISE</p>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-item">
-                        <span>C++</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 90%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 85%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Javascript</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 75%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>SQL</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 85%;"></div></div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-item">
-                        <span>Django</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 90%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>DRF</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 85%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>FastAPI</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 80%;"></div></div>
-                    </div>
-                    
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-item">
-                        <span>Git/GitLab CI/CD</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 75%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Linux/Docker</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 83%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Celery/RabbitMQ/Redis</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 70%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Postman/Jira</span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 82%;"></div></div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Problem Solving Sites</h3>
-                    <div class="skill-item">
-                        <span style="display: inline-flex; align-items: center; gap: 5px;">
-                            LeetCode
-                            <a href="https://leetcode.com/u/PannaAryan/" target="_blank" rel="noopener noreferrer" title="Visit LeetCode" style="text-decoration: none; font-size: 1rem;">
-                            ↗️
-                            </a>
-                        </span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 85%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span style="display: inline-flex; align-items: center; gap: 5px;">
-                            CodeForces
-                            <a href="https://codeforces.com/profile/panna1957" target="_blank" rel="noopener noreferrer" title="Visit LeetCode" style="text-decoration: none; font-size: 1rem;">
-                            ↗️
-                            </a>
-                        </span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 80%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span style="display: inline-flex; align-items: center; gap: 5px;">
-                            HackerRank
-                            <a href="https://www.hackerrank.com/profile/Noob_57" target="_blank" rel="noopener noreferrer" title="Visit LeetCode" style="text-decoration: none; font-size: 1rem;">
-                            ↗️
-                            </a>
-                        </span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 70%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span style="display: inline-flex; align-items: center; gap: 5px;">
-                            StopStalk
-                            <a href="https://www.stopstalk.com/user/profile/HeWhoFades" target="_blank" rel="noopener noreferrer" title="Visit LeetCode" style="text-decoration: none; font-size: 1rem;">
-                            ↗️
-                            </a>
-                        </span>
-                        <div class="skill-bar"><div class="skill-progress" style="--progress: 65%;"></div></div>
-                    </div>
-                </div>
+            <div class="project-card">
+              <h3>Retro Turtles</h3>
+              <p class="project-description">
+                2D arcade-style shooting game inspired by Chicken Invaders with
+                core gameplay mechanics and classic visuals.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Turtle</span>
+                <span class="tag">OOP</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-link">Live Demo</a>
+                <a
+                  href="https://github.com/PannaAryan/Retro-Turtles"
+                  class="btn-link"
+                  >GitHub</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="experience" class="section experience-section">
-            <h2>Experience</h2>
-            <p class="section-subtitle">PROFESSIONAL JOURNEY</p>
-            <div class="experience-container">
-                <div class="experience-card">
-                    <h3>Software Engineer</h3>
-                    <p class="company">TallyKhata</p>
-                    <p class="duration">November 2024 - Present</p>
-                    <ul>
-                        <li>Core backend engineer for TallyKhata (10M+ downloads, 300K DAUs), focused on MSMEs in Bangladesh.</li>
-                        <li>Built a custom URL shortener with FastAPI, replacing Firebase and reducing external dependencies.</li>
-                        <li>Optimized PostgreSQL queries, reducing server load by 15% during peak hours.</li>
-                        <li>Improved GitLab CI/CD pipelines, cutting build times by 20% across environments.</li>
-                        <li>During internship, developed APIs, wrote unit tests, and improved backend–frontend integration, saving 25% dev time.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section id="research" class="section research-section">
+        <h2>Research</h2>
+        <p class="section-subtitle">PUBLICATIONS & CONTRIBUTIONS</p>
+        <div class="research-container">
+          <div class="paper-card">
+            <span class="paper-icon">📄</span>
+            <h3>
+              Early Task Failure Prediction in Cloud Computing Using Machine
+              Learning and Feature Analytics
+            </h3>
+            <p class="journal">Vietnam Journal of Computer Science</p>
+            <p class="published-date">Under Review: July, 2025</p>
+            <p class="paper-description">
+              Early-stage task failure prediction using machine learning on
+              Google Borg data to reduce resource waste and improve scheduling
+              efficiency, combining supervised models with feature analysis and
+              clustering to detect high-risk tasks and uncover underlying
+              patterns.
+            </p>
+            <a href="#" class="btn-link">Read Paper</a>
+          </div>
+        </div>
+      </section>
 
-        <section id="projects" class="section projects-section">
-            <h2>Projects</h2>
-            <p class="section-subtitle">FEATURED WORK</p>
-            <div class="projects-carousel-container">
-                <div class="projects-carousel">
-                    <div class="project-card">
-                        <h3>Cast Your Vote</h3>
-                        <p class="project-description">a web-based voting platform allowing users to participate in polls with real-time results and secure user access</p>
-                        <div class="project-tags">
-                            <span class="tag">Django</span>
-                            <span class="tag">BootStrap</span>
-                            <span class="tag">HTML</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-link">Live Demo</a>
-                            <a href="https://github.com/PannaAryan/Cast-Your-Vote" class="btn-link">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>DentaFlow</h3>
-                        <p class="project-description">Fullstack dental workflow application for managing appointments, doctor schedules, and patient records with secure access.</p>
-                        <div class="project-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Express</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-link">Live Demo</a>
-                            <a href="https://github.com/PannaAryan/DentaFlow" class="btn-link">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Retro Turtles</h3>
-                        <p class="project-description">2D arcade-style shooting game inspired by Chicken Invaders with core gameplay mechanics and classic visuals.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Turtle</span>
-                            <span class="tag">OOP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-link">Live Demo</a>
-                            <a href="https://github.com/PannaAryan/Retro-Turtles" class="btn-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+      <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <p class="section-subtitle">LET'S CONNECT</p>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="icon">📧</div>
+              <div>
+                <span class="label">Email</span>
+                <span class="value">panna.das.314@gmail.com</span>
+              </div>
             </div>
-        </section>
-
-        <section id="research" class="section research-section">
-            <h2>Research</h2>
-            <p class="section-subtitle">PUBLICATIONS & CONTRIBUTIONS</p>
-            <div class="research-container">
-                <div class="paper-card">
-                    <span class="paper-icon">📄</span>
-                    <h3>Early Task Failure Prediction in Cloud Computing Using Machine Learning and Feature Analytics</h3>
-                    <p class="journal">Vietnam Journal of Computer Science</p>
-                    <p class="published-date">Under Review: July, 2025</p>
-                    <p class="paper-description">Early-stage task failure prediction using machine learning on Google Borg data to reduce resource waste and improve scheduling efficiency, combining supervised models with feature analysis and clustering to detect high-risk tasks and uncover underlying patterns.
-                    </p>
-                    <a href="#" class="btn-link">Read Paper</a>
-                </div>
+            <div class="info-item">
+              <div class="icon">📞</div>
+              <div>
+                <span class="label">Phone</span>
+                <span class="value">+8801624841918</span>
+              </div>
             </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <h2>Contact</h2>
-            <p class="section-subtitle">LET'S CONNECT</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <div class="icon">📧</div>
-                        <div>
-                            <span class="label">Email</span>
-                            <span class="value">panna.das.314@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="icon">📞</div>
-                        <div>
-                            <span class="label">Phone</span>
-                            <span class="value">+8801624841918</span>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="icon">🌐</div>
-                        <div>
-                            <span class="label">LinkedIn</span>
-                            <a href="https://www.linkedin.com/in/panna-das-aryan" class="btn-link">Panna Das Aryan</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="icon">📑</div>
-                        <div>
-                            <span class="label">GitHub</span>
-                            <a href="https://github.com/PannaAryan" class="btn-link">PannaAryan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-container">
-                    <form id="contact-form" class="contact-form">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
+            <div class="info-item">
+              <div class="icon">🌐</div>
+              <div>
+                <span class="label">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/panna-das-aryan"
+                  class="btn-link"
+                  >Panna Das Aryan</a
+                >
+              </div>
             </div>
-        </section>
+            <div class="info-item">
+              <div class="icon">📑</div>
+              <div>
+                <span class="label">GitHub</span>
+                <a href="https://github.com/PannaAryan" class="btn-link"
+                  >PannaAryan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Terminal Container -->
     <div class="terminal-container" id="terminal-container">
-        <div class="terminal-header">
-            <div class="terminal-buttons">
-                <span class="terminal-button red"></span>
-                <span class="terminal-button yellow"></span>
-                <span class="terminal-button green"></span>
-            </div>
-            <span class="terminal-title">portfolio-terminal</span>
-            <button class="terminal-close" id="terminal-close">✕</button>
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <span class="terminal-button red"></span>
+          <span class="terminal-button yellow"></span>
+          <span class="terminal-button green"></span>
         </div>
-        <div class="terminal-output" id="terminal-output"></div>
-        <div class="terminal-input-area">
-            <span class="terminal-prompt">portfolio@terminal:~$</span>
-            <input type="text" class="terminal-input" id="terminal-input" autofocus>
-        </div>
+        <span class="terminal-title">portfolio-terminal</span>
+        <button class="terminal-close" id="terminal-close">✕</button>
+      </div>
+      <div class="terminal-output" id="terminal-output"></div>
+      <div class="terminal-input-area">
+        <span class="terminal-prompt">portfolio@terminal:~$</span>
+        <input
+          type="text"
+          class="terminal-input"
+          id="terminal-input"
+          autofocus
+        />
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
